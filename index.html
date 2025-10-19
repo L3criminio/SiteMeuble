@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lumea — Mobilier Durable</title>
+    <meta name="description" content="Vendeur de meubles durables. Bois certifié, design intemporel.">
+    <meta name="theme-color" content="#6d4c41">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon/web-app-manifest-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#6d4c41">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle" class="theme-checkbox" aria-label="Activer le mode sombre">
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox" aria-label="Ouvrir ou fermer le menu de navigation">
+
+    <a class="skip-link" href="#contenu">Aller au contenu principal</a>
+
+    <header role="banner">
+        <div class="container">
+            <div class="header-content">
+                <a href="#presentation" class="logo" aria-label="Retour à l'accueil Lumea">
+                    <img src="assets/img/logo.webp" alt="" class="logo-img" role="presentation">
+                    <span class="brand">Lumea</span>
+                </a>
+
+                <label for="menu-toggle" class="menu-btn" aria-label="Ouvrir le menu de navigation">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </label>
+
+                <nav aria-label="Navigation principale">
+                    <ul class="nav-list">
+                        <li><a href="#presentation" onclick="document.getElementById('menu-toggle').checked = false">Accueil</a></li>
+                        <li><a href="#boutique" onclick="document.getElementById('menu-toggle').checked = false">Boutique</a></li>
+                        <li><a href="#a-propos" onclick="document.getElementById('menu-toggle').checked = false">À propos</a></li>
+                        <li><a href="#contact" onclick="document.getElementById('menu-toggle').checked = false">Contact</a></li>
+                        <li><a href="#faq" onclick="document.getElementById('menu-toggle').checked = false">FAQ</a></li>
+                        <li class="theme-toggle-item">
+                            <label for="theme-toggle" class="theme-toggle-link">
+                                <span>Mode sombre</span>
+                                <span class="theme-icons">
+                                    <span class="sun-icon" aria-hidden="true">☀️</span>
+                                    <span class="moon-icon" aria-hidden="true">🌙</span>
+                                </span>
+                            </label>
+                        </li>
+                    </ul>
+                </nav>
+
+                <label for="theme-toggle" class="theme-btn" aria-label="Activer ou désactiver le mode sombre">
+                    <span class="sun-icon" aria-hidden="true">☀️</span>
+                    <span class="moon-icon" aria-hidden="true">🌙</span>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <main id="contenu" role="main">
+        <!-- Présentation / Hero -->
+        <section id="presentation" class="hero" aria-labelledby="hero-title">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <p class="tag" aria-label="Étiquette nouveautés">Nouveautés 2025</p>
+                        <h1 id="hero-title">Mobilier durable pour intérieurs exigeants</h1>
+                        <p class="lead">Bois certifié, finitions non toxiques, conception pensée pour durer. Notre ligne allie fonctionnalité, esthétique et impact réduit sur l'environnement.</p>
+                        <nav class="hero-actions" aria-label="Actions principales">
+                            <a href="#boutique" class="btn btn-primary">Découvrir la collection</a>
+                            <a href="#a-propos" class="btn btn-secondary">En savoir plus</a>
+                        </nav>
+                    </div>
+                    <div class="hero-visual" aria-hidden="true">
+                        <div class="hero-card">
+                            <img src="assets/img/meuble1.jpg" alt="" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Boutique -->
+        <section id="boutique" aria-labelledby="boutique-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="boutique-title">Notre Collection</h2>
+                    <p class="lead">Sélection essentielle de mobilier durable et intemporel</p>
+                </div>
+
+                <ul class="product-grid">
+                    <li>
+                        <article class="product-card">
+                            <div class="product-image">
+                                <span class="product-badge" aria-label="Matériau">Chêne massif</span>
+                                <img src="assets/img/meuble2.jpg" alt="Buffet en chêne massif avec trois portes" loading="lazy">
+                            </div>
+                            <div class="product-info">
+                                <h3>Buffet Chêne Luma</h3>
+                                <p>Rangements généreux avec finition huilée naturelle</p>
+                                <div class="product-footer">
+                                    <p class="price" aria-label="Prix">999 €</p>
+                                    <a href="#" class="btn-add" aria-label="Voir les détails du Buffet Chêne Luma">Voir détails</a>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li>
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="assets/img/meuble3.jpg" alt="Table de salle à manger extensible en bois" loading="lazy">
+                            </div>
+                            <div class="product-info">
+                                <h3>Table Extensible Arko</h3>
+                                <p>De 160 à 240 cm, mécanisme discret et élégant</p>
+                                <div class="product-footer">
+                                    <p class="price" aria-label="Prix">1 290 €</p>
+                                    <a href="#" class="btn-add" aria-label="Voir les détails de la Table Extensible Arko">Voir détails</a>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li>
+                        <article class="product-card">
+                            <div class="product-image">
+                                <span class="product-badge" aria-label="Label">Éco-responsable</span>
+                                <img src="assets/img/meuble4.jpg" alt="Canapé 3 places en tissu recyclé gris" loading="lazy">
+                            </div>
+                            <div class="product-info">
+                                <h3>Canapé Rhea 3P</h3>
+                                <p>Déhoussable, tissu recyclé, confort optimal</p>
+                                <div class="product-footer">
+                                    <p class="price" aria-label="Prix">1 150 €</p>
+                                    <a href="#" class="btn-add" aria-label="Voir les détails du Canapé Rhea 3P">Voir détails</a>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li>
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="assets/img/meuble5.jpg" alt="Chaise en noyer avec assise rembourrée" loading="lazy">
+                            </div>
+                            <div class="product-info">
+                                <h3>Chaise Noyer Vida</h3>
+                                <p>Assise rembourrée, structure en noyer massif</p>
+                                <div class="product-footer">
+                                    <p class="price" aria-label="Prix">189 €</p>
+                                    <a href="#" class="btn-add" aria-label="Voir les détails de la Chaise Noyer Vida">Voir détails</a>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- À propos -->
+        <section id="a-propos" class="about-section" aria-labelledby="about-title">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2 id="about-title">Notre Histoire</h2>
+                        <p class="lead">Depuis 1998, nous concevons un mobilier sobre et réparable. Chaque pièce est documentée pour l'entretien et les réparations futures.</p>
+                        <ul class="check-list">
+                            <li>Bois issu de forêts gérées durablement (FSC)</li>
+                            <li>Pièces détachées disponibles pendant 10 ans</li>
+                            <li>Finitions à faible émission de COV</li>
+                            <li>Fabrication européenne garantie</li>
+                        </ul>
+                    </div>
+                    <aside class="about-card" aria-labelledby="engagements-title">
+                        <h3 id="engagements-title">Nos Engagements</h3>
+                        <div class="engagement-item">
+                            <span class="engagement-icon" aria-hidden="true">🌍</span>
+                            <div>
+                                <strong>Empreinte carbone</strong>
+                                <p>Mesurée et réduite à chaque étape</p>
+                            </div>
+                        </div>
+                        <div class="engagement-item">
+                            <span class="engagement-icon" aria-hidden="true">🔍</span>
+                            <div>
+                                <strong>Transparence</strong>
+                                <p>Chaîne d'approvisionnement traçable</p>
+                            </div>
+                        </div>
+                        <div class="engagement-item">
+                            <span class="engagement-icon" aria-hidden="true">♻️</span>
+                            <div>
+                                <strong>Durabilité</strong>
+                                <p>Conçu pour durer des décennies</p>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h2 id="contact-title">Contactez-nous</h2>
+                        <p class="lead">Réponse sous 2 jours ouvrés. Notre équipe est à votre écoute.</p>
+                        
+                        <dl class="contact-details">
+                            <div class="contact-item">
+                                <dt><span aria-hidden="true">📧</span> Email</dt>
+                                <dd><a href="mailto:contact@lumea.fr">contact@lumea.fr</a></dd>
+                            </div>
+                            <div class="contact-item">
+                                <dt><span aria-hidden="true">📞</span> Téléphone</dt>
+                                <dd><a href="tel:+33123456789">01 23 45 67 89</a></dd>
+                            </div>
+                            <div class="contact-item">
+                                <dt><span aria-hidden="true">📍</span> Adresse</dt>
+                                <dd>123 Avenue du Mobilier<br>75001 Paris, France</dd>
+                            </div>
+                        </dl>
+                    </div>
+
+                    <form class="contact-form" action="#" method="post" aria-labelledby="contact-title">
+                        <fieldset>
+                            <legend class="sr-only">Formulaire de contact</legend>
+                            <div class="form-group">
+                                <label for="nom">Nom <abbr title="obligatoire" aria-label="obligatoire">*</abbr></label>
+                                <input id="nom" name="nom" type="text" autocomplete="name" required aria-required="true">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email <abbr title="obligatoire" aria-label="obligatoire">*</abbr></label>
+                                <input id="email" name="email" type="email" autocomplete="email" required aria-required="true">
+                            </div>
+                            <div class="form-group">
+                                <label for="sujet">Sujet</label>
+                                <input id="sujet" name="sujet" type="text" autocomplete="off">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message <abbr title="obligatoire" aria-label="obligatoire">*</abbr></label>
+                                <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">Envoyer le message</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="faq-section" aria-labelledby="faq-title">
+            <div class="container">
+                <h2 id="faq-title">Questions Fréquentes</h2>
+                
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary>Quels matériaux utilisez-vous ?</summary>
+                        <p>Nous privilégions le bois massif certifié FSC, le placage véritable, l'acier thermolaqué et les tissus recyclés selon les modèles. Tous nos matériaux sont sélectionnés pour leur durabilité et leur faible impact environnemental.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Livrez-vous et installez-vous les meubles ?</summary>
+                        <p>Nous livrons dans toute la France métropolitaine. Une option installation professionnelle et reprise des emballages est disponible pour faciliter votre expérience.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Comment entretenir le bois ?</summary>
+                        <p>Un essuyage doux hebdomadaire suffit pour l'entretien courant. Nous recommandons un huilage annuel pour nourrir le bois. Un guide d'entretien détaillé est fourni avec chaque meuble.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Quelle est la garantie sur vos produits ?</summary>
+                        <p>Tous nos meubles bénéficient d'une garantie de 5 ans sur les défauts de fabrication. Les pièces détachées restent disponibles pendant 10 ans pour assurer la longévité de votre mobilier.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo" aria-label="Lumea">
+                        <img src="assets/img/logo.webp" alt="" class="logo-img" role="presentation">
+                        <span class="brand">Lumea</span>
+                    </div>
+                    <p>Mobilier durable depuis 1998</p>
+                </div>
+                <nav class="footer-links" aria-label="Navigation du pied de page">
+                    <div class="footer-col">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#presentation">Accueil</a></li>
+                            <li><a href="#boutique">Boutique</a></li>
+                            <li><a href="#a-propos">À propos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Aide</h4>
+                        <ul>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="#" aria-label="Informations sur la livraison">Livraison</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Légal</h4>
+                        <ul>
+                            <li><a href="#" aria-label="Consulter les mentions légales">Mentions légales</a></li>
+                            <li><a href="#" aria-label="Consulter les conditions générales de vente">CGV</a></li>
+                            <li><a href="#" aria-label="Politique de confidentialité">Confidentialité</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Lumea. Tous droits réservés.</p>
+                <a href="#presentation" class="back-to-top" aria-label="Retourner en haut de la page"><span aria-hidden="true">↑</span> Haut de page</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
