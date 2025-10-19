@@ -717,7 +717,7 @@ html:has(.theme-checkbox:checked) .product-footer {
 
 .btn-add {
   padding: 0.625rem 1.25rem;
-  background: var(--gray-100);
+  background: var(--gray-200);
   color: var(--text);
   border-radius: var(--radius-sm);
   font-weight: 600;
@@ -1549,15 +1549,17 @@ html:has(.theme-checkbox:checked) footer .footer-col h4 {
   }
 }
 
-/* Prevent body scroll when modal is open */
-.modal:target ~ body,
-body:has(.modal:target) {
-  overflow: hidden;
+/* Prevent body scroll when modal is open (checkbox approach) */
+#modal-mentions-toggle:checked ~ footer,
+#modal-cgv-toggle:checked ~ footer,
+#modal-confidentialite-toggle:checked ~ footer {
+  pointer-events: none;
 }
 
-/* Disable smooth scroll when modals are open (legacy :target approach) */
-html:has(.modal:target) {
-  scroll-behavior: auto;
+body:has(#modal-mentions-toggle:checked),
+body:has(#modal-cgv-toggle:checked),
+body:has(#modal-confidentialite-toggle:checked) {
+  overflow: hidden;
 }
 
 /* ===== Print styles ===== */
