@@ -23,6 +23,10 @@
   --white: #ffffff;
   --cream: #f5f1ed;
 
+  /* Fixed colors for high contrast (don't invert) */
+  --color-light: #ffffff;
+  --color-dark: #1a1a1a;
+
   --primary: var(--brown-700);
   --secondary: var(--gray-800);
   --accent: var(--brown-600);
@@ -167,7 +171,7 @@ html:has(.theme-checkbox:checked) body {
   top: 1rem;
   padding: 0.75rem 1rem;
   background: var(--primary);
-  color: var(--white);
+  color: var(--color-light);
   border-radius: var(--radius-sm);
   font-weight: 600;
   z-index: 100;
@@ -393,7 +397,7 @@ nav {
 .nav-list a:hover,
 .nav-list a:focus-visible {
   background: var(--primary);
-  color: var(--white);
+  color: var(--color-light);
   transform: translateY(-1px);
 }
 
@@ -559,9 +563,10 @@ html:has(.theme-checkbox:checked) .hero::before {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--primary) 0%, var(--brown-700) 100%);
-  color: var(--white);
+  background: var(--gray-900);
+  color: var(--gray-50);
   box-shadow: var(--shadow-md);
+  font-weight: 700;
 }
 
 .btn-primary:hover {
@@ -577,7 +582,7 @@ html:has(.theme-checkbox:checked) .hero::before {
 
 .btn-secondary:hover {
   background: var(--primary);
-  color: var(--white);
+  color: var(--color-light);
   transform: translateY(-2px);
 }
 
@@ -730,7 +735,7 @@ html:has(.theme-checkbox:checked) .product-footer {
 .btn-add:hover,
 .btn-add:focus-visible {
   background: var(--primary);
-  color: var(--white);
+  color: var(--color-light);
   transform: translateY(-2px);
   box-shadow: var(--shadow-sm);
 }
@@ -1025,15 +1030,15 @@ html:has(.theme-checkbox:checked) footer {
 }
 
 .footer-brand .brand {
-  color: var(--white);
-}
-
-html:has(.theme-checkbox:checked) footer .footer-brand .brand {
-  color: #e0e0e0;
+  color: var(--color-light);
 }
 
 .footer-brand p {
   color: var(--gray-400);
+}
+
+html:has(.theme-checkbox:checked) footer .footer-brand p {
+  color: #d0d0d0;
 }
 
 .footer-links {
@@ -1043,7 +1048,7 @@ html:has(.theme-checkbox:checked) footer .footer-brand .brand {
 }
 
 .footer-col h4 {
-  color: var(--white);
+  color: var(--color-light);
   font-weight: 600;
   margin-bottom: 1rem;
   font-size: 1rem;
@@ -1064,6 +1069,11 @@ html:has(.theme-checkbox:checked) footer .footer-col h4 {
   color: var(--gray-400);
   transition: var(--transition);
   cursor: pointer;
+}
+
+html:has(.theme-checkbox:checked) footer .footer-col a,
+html:has(.theme-checkbox:checked) footer .footer-col label {
+  color: #d0d0d0;
 }
 
 .footer-col a:hover,
@@ -1089,10 +1099,18 @@ html:has(.theme-checkbox:checked) footer .footer-col h4 {
   font-weight: 500;
 }
 
+html:has(.theme-checkbox:checked) footer .footer-bottom p {
+  color: #d0d0d0;
+}
+
 .back-to-top {
   color: var(--gray-400);
   font-weight: 600;
   transition: var(--transition);
+}
+
+html:has(.theme-checkbox:checked) footer .back-to-top {
+  color: #d0d0d0;
 }
 
 .back-to-top:hover {
@@ -1439,7 +1457,7 @@ html:has(.theme-checkbox:checked) footer .footer-col h4 {
 
 .modal-content h2 {
   background: var(--primary);
-  color: var(--white);
+  color: var(--color-light);
   padding: 1.5rem 3rem 1.5rem 2rem;
   margin: 0;
   font-size: 1.75rem;
@@ -1453,7 +1471,7 @@ html:has(.theme-checkbox:checked) footer .footer-col h4 {
   background: transparent;
   border: none;
   font-size: 2rem;
-  color: var(--white);
+  color: var(--text);
   cursor: pointer;
   width: 2.5rem;
   height: 2.5rem;
@@ -1473,7 +1491,7 @@ html:has(.theme-checkbox:checked) footer .footer-col h4 {
 }
 
 .modal-close:focus {
-  outline: 2px solid var(--white);
+  outline: 2px solid var(--text);
   outline-offset: 2px;
 }
 
