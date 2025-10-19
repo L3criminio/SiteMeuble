@@ -1250,7 +1250,7 @@ html:has(.theme-checkbox:checked) footer .back-to-top {
   html:has(.menu-checkbox:checked) .menu-btn span:nth-child(1) {
     top: 50%;
     transform: translateY(-50%) rotate(45deg);
-    background: var(--color-light);
+    background: var(--color-dark);
   }
 
   html:has(.menu-checkbox:checked) .menu-btn span:nth-child(2) {
