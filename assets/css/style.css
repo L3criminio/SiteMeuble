@@ -1056,13 +1056,17 @@ html:has(.theme-checkbox:checked) footer .footer-col h4 {
   gap: 0.5rem;
 }
 
-.footer-col a {
+.footer-col a,
+.footer-col label {
   color: var(--gray-400);
   transition: var(--transition);
+  cursor: pointer;
 }
 
 .footer-col a:hover,
-.footer-col a:focus-visible {
+.footer-col a:focus-visible,
+.footer-col label:hover,
+.footer-col label:focus-visible {
   color: var(--brown-400);
   padding-left: 0.25rem;
 }
@@ -1351,15 +1355,15 @@ html:has(.theme-checkbox:checked) footer .footer-col h4 {
   }
 }
 
-/* ===== Modal Close Target ===== */
-.modal-close-target {
-  position: absolute;
-  top: 0;
-  left: 0;
+/* ===== Modal Checkbox (hidden) ===== */
+.modal-checkbox {
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
   width: 0;
   height: 0;
-  visibility: hidden;
-  pointer-events: none;
+  top: 0;
+  left: 0;
 }
 
 /* ===== Modal Styles ===== */
@@ -1376,7 +1380,10 @@ html:has(.theme-checkbox:checked) footer .footer-col h4 {
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-.modal:target {
+/* Show modal when corresponding checkbox is checked */
+#modal-mentions-toggle:checked ~ footer ~ .modal:nth-of-type(1),
+#modal-cgv-toggle:checked ~ footer ~ .modal:nth-of-type(2),
+#modal-confidentialite-toggle:checked ~ footer ~ .modal:nth-of-type(3) {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1393,6 +1400,7 @@ html:has(.theme-checkbox:checked) footer .footer-col h4 {
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(4px);
   cursor: pointer;
+  display: block;
 }
 
 .modal-content {
@@ -1496,13 +1504,16 @@ html:has(.theme-checkbox:checked) footer .footer-col h4 {
   margin-bottom: 0.5rem;
 }
 
-.modal-body a {
+.modal-body a,
+.modal-body .link-label {
   color: var(--primary);
   text-decoration: underline;
   transition: var(--transition);
+  cursor: pointer;
 }
 
-.modal-body a:hover {
+.modal-body a:hover,
+.modal-body .link-label:hover {
   color: var(--brown-700);
 }
 

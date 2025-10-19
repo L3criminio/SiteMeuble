@@ -18,10 +18,11 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <span id="close-modal" class="modal-close-target"></span>
-
     <input type="checkbox" id="theme-toggle" class="theme-checkbox" aria-label="Activer le mode sombre">
     <input type="checkbox" id="menu-toggle" class="menu-checkbox" aria-label="Ouvrir ou fermer le menu de navigation">
+    <input type="checkbox" id="modal-mentions-toggle" class="modal-checkbox">
+    <input type="checkbox" id="modal-cgv-toggle" class="modal-checkbox">
+    <input type="checkbox" id="modal-confidentialite-toggle" class="modal-checkbox">
 
     <a class="skip-link" href="#contenu">Aller au contenu principal</a>
 
@@ -316,9 +317,9 @@
                     <div class="footer-col">
                         <h4>Légal</h4>
                         <ul>
-                            <li><a href="#modal-mentions-legales">Mentions légales</a></li>
-                            <li><a href="#modal-cgv">CGV</a></li>
-                            <li><a href="#modal-confidentialite">Confidentialité</a></li>
+                            <li><label for="modal-mentions-toggle">Mentions légales</label></li>
+                            <li><label for="modal-cgv-toggle">CGV</label></li>
+                            <li><label for="modal-confidentialite-toggle">Confidentialité</label></li>
                         </ul>
                     </div>
                 </nav>
@@ -331,10 +332,10 @@
     </footer>
 
     <!-- Modales -->
-    <div id="modal-mentions-legales" class="modal" role="dialog" aria-labelledby="modal-mentions-title" aria-modal="true">
-        <a href="#close-modal" class="modal-overlay" aria-label="Fermer la modale"></a>
+    <div class="modal" role="dialog" aria-labelledby="modal-mentions-title" aria-modal="true">
+        <label for="modal-mentions-toggle" class="modal-overlay" aria-label="Fermer la modale"></label>
         <div class="modal-content">
-            <a href="#close-modal" class="modal-close" aria-label="Fermer la modale">&times;</a>
+            <label for="modal-mentions-toggle" class="modal-close" aria-label="Fermer la modale">&times;</label>
             <h2 id="modal-mentions-title">Mentions Légales</h2>
             <div class="modal-body">
                 <h3>Éditeur du site</h3>
@@ -363,15 +364,15 @@
                 Icônes : Design personnalisé Lumea</p>
 
                 <h3>Cookies et données personnelles</h3>
-                <p>Pour en savoir plus sur l'utilisation de vos données personnelles, consultez notre <a href="#modal-confidentialite">Politique de confidentialité</a>.</p>
+                <p>Pour en savoir plus sur l'utilisation de vos données personnelles, consultez notre <label for="modal-confidentialite-toggle" class="link-label">Politique de confidentialité</label>.</p>
             </div>
         </div>
     </div>
 
-    <div id="modal-cgv" class="modal" role="dialog" aria-labelledby="modal-cgv-title" aria-modal="true">
-        <a href="#close-modal" class="modal-overlay" aria-label="Fermer la modale"></a>
+    <div class="modal" role="dialog" aria-labelledby="modal-cgv-title" aria-modal="true">
+        <label for="modal-cgv-toggle" class="modal-overlay" aria-label="Fermer la modale"></label>
         <div class="modal-content">
-            <a href="#close-modal" class="modal-close" aria-label="Fermer la modale">&times;</a>
+            <label for="modal-cgv-toggle" class="modal-close" aria-label="Fermer la modale">&times;</label>
             <h2 id="modal-cgv-title">Conditions Générales de Vente</h2>
             <div class="modal-body">
                 <h3>Article 1 - Champ d'application</h3>
@@ -404,10 +405,10 @@
         </div>
     </div>
 
-    <div id="modal-confidentialite" class="modal" role="dialog" aria-labelledby="modal-confidentialite-title" aria-modal="true">
-        <a href="#close-modal" class="modal-overlay" aria-label="Fermer la modale"></a>
+    <div class="modal" role="dialog" aria-labelledby="modal-confidentialite-title" aria-modal="true">
+        <label for="modal-confidentialite-toggle" class="modal-overlay" aria-label="Fermer la modale"></label>
         <div class="modal-content">
-            <a href="#close-modal" class="modal-close" aria-label="Fermer la modale">&times;</a>
+            <label for="modal-confidentialite-toggle" class="modal-close" aria-label="Fermer la modale">&times;</label>
             <h2 id="modal-confidentialite-title">Politique de Confidentialité</h2>
             <div class="modal-body">
                 <h3>1. Collecte des données personnelles</h3>
