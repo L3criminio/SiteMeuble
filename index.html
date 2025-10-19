@@ -18,16 +18,18 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <span id="close-modal" class="modal-close-target"></span>
+
     <input type="checkbox" id="theme-toggle" class="theme-checkbox" aria-label="Activer le mode sombre">
     <input type="checkbox" id="menu-toggle" class="menu-checkbox" aria-label="Ouvrir ou fermer le menu de navigation">
 
     <a class="skip-link" href="#contenu">Aller au contenu principal</a>
 
-    <header role="banner">
+    <header>
         <div class="container">
             <div class="header-content">
                 <a href="#presentation" class="logo" aria-label="Retour à l'accueil Lumea">
-                    <img src="assets/img/logo.webp" alt="" class="logo-img" role="presentation">
+                    <img src="assets/img/logo.webp" alt="" class="logo-img">
                     <span class="brand">Lumea</span>
                 </a>
 
@@ -64,13 +66,13 @@
         </div>
     </header>
 
-    <main id="contenu" role="main">
+    <main id="contenu">
         <!-- Présentation / Hero -->
         <section id="presentation" class="hero" aria-labelledby="hero-title">
             <div class="container">
                 <div class="hero-content">
                     <div class="hero-text">
-                        <p class="tag" aria-label="Étiquette nouveautés">Nouveautés 2025</p>
+                        <p class="tag">Nouveautés 2025</p>
                         <h1 id="hero-title">Mobilier durable pour intérieurs exigeants</h1>
                         <p class="lead">Bois certifié, finitions non toxiques, conception pensée pour durer. Notre ligne allie fonctionnalité, esthétique et impact réduit sur l'environnement.</p>
                         <nav class="hero-actions" aria-label="Actions principales">
@@ -99,14 +101,14 @@
                     <li>
                         <article class="product-card">
                             <div class="product-image">
-                                <span class="product-badge" aria-label="Matériau">Chêne massif</span>
+                                <span class="product-badge">Chêne massif</span>
                                 <img src="assets/img/meuble2.jpg" alt="Buffet en chêne massif avec trois portes" loading="lazy">
                             </div>
                             <div class="product-info">
                                 <h3>Buffet Chêne Luma</h3>
                                 <p>Rangements généreux avec finition huilée naturelle</p>
                                 <div class="product-footer">
-                                    <p class="price" aria-label="Prix">999 €</p>
+                                    <p class="price">999 €</p>
                                     <a href="#" class="btn-add" aria-label="Voir les détails du Buffet Chêne Luma">Voir détails</a>
                                 </div>
                             </div>
@@ -122,7 +124,7 @@
                                 <h3>Table Extensible Arko</h3>
                                 <p>De 160 à 240 cm, mécanisme discret et élégant</p>
                                 <div class="product-footer">
-                                    <p class="price" aria-label="Prix">1 290 €</p>
+                                    <p class="price">1 290 €</p>
                                     <a href="#" class="btn-add" aria-label="Voir les détails de la Table Extensible Arko">Voir détails</a>
                                 </div>
                             </div>
@@ -132,14 +134,14 @@
                     <li>
                         <article class="product-card">
                             <div class="product-image">
-                                <span class="product-badge" aria-label="Label">Éco-responsable</span>
+                                <span class="product-badge">Éco-responsable</span>
                                 <img src="assets/img/meuble4.jpg" alt="Canapé 3 places en tissu recyclé gris" loading="lazy">
                             </div>
                             <div class="product-info">
                                 <h3>Canapé Rhea 3P</h3>
                                 <p>Déhoussable, tissu recyclé, confort optimal</p>
                                 <div class="product-footer">
-                                    <p class="price" aria-label="Prix">1 150 €</p>
+                                    <p class="price">1 150 €</p>
                                     <a href="#" class="btn-add" aria-label="Voir les détails du Canapé Rhea 3P">Voir détails</a>
                                 </div>
                             </div>
@@ -155,7 +157,7 @@
                                 <h3>Chaise Noyer Vida</h3>
                                 <p>Assise rembourrée, structure en noyer massif</p>
                                 <div class="product-footer">
-                                    <p class="price" aria-label="Prix">189 €</p>
+                                    <p class="price">189 €</p>
                                     <a href="#" class="btn-add" aria-label="Voir les détails de la Chaise Noyer Vida">Voir détails</a>
                                 </div>
                             </div>
@@ -235,11 +237,11 @@
                         <fieldset>
                             <legend class="sr-only">Formulaire de contact</legend>
                             <div class="form-group">
-                                <label for="nom">Nom <abbr title="obligatoire" aria-label="obligatoire">*</abbr></label>
+                                <label for="nom">Nom <abbr title="obligatoire">*</abbr></label>
                                 <input id="nom" name="nom" type="text" autocomplete="name" required aria-required="true">
                             </div>
                             <div class="form-group">
-                                <label for="email">Email <abbr title="obligatoire" aria-label="obligatoire">*</abbr></label>
+                                <label for="email">Email <abbr title="obligatoire">*</abbr></label>
                                 <input id="email" name="email" type="email" autocomplete="email" required aria-required="true">
                             </div>
                             <div class="form-group">
@@ -247,7 +249,7 @@
                                 <input id="sujet" name="sujet" type="text" autocomplete="off">
                             </div>
                             <div class="form-group">
-                                <label for="message">Message <abbr title="obligatoire" aria-label="obligatoire">*</abbr></label>
+                                <label for="message">Message <abbr title="obligatoire">*</abbr></label>
                                 <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary btn-full">Envoyer le message</button>
@@ -284,12 +286,12 @@
         </section>
     </main>
 
-    <footer role="contentinfo">
+    <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <div class="logo" aria-label="Lumea">
-                        <img src="assets/img/logo.webp" alt="" class="logo-img" role="presentation">
+                    <div class="logo">
+                        <img src="assets/img/logo.webp" alt="" class="logo-img">
                         <span class="brand">Lumea</span>
                     </div>
                     <p>Mobilier durable depuis 1998</p>
@@ -314,9 +316,9 @@
                     <div class="footer-col">
                         <h4>Légal</h4>
                         <ul>
-                            <li><a href="#" aria-label="Consulter les mentions légales">Mentions légales</a></li>
-                            <li><a href="#" aria-label="Consulter les conditions générales de vente">CGV</a></li>
-                            <li><a href="#" aria-label="Politique de confidentialité">Confidentialité</a></li>
+                            <li><a href="#modal-mentions-legales">Mentions légales</a></li>
+                            <li><a href="#modal-cgv">CGV</a></li>
+                            <li><a href="#modal-confidentialite">Confidentialité</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -327,5 +329,160 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modales -->
+    <div id="modal-mentions-legales" class="modal" role="dialog" aria-labelledby="modal-mentions-title" aria-modal="true">
+        <a href="#close-modal" class="modal-overlay" aria-label="Fermer la modale"></a>
+        <div class="modal-content">
+            <a href="#close-modal" class="modal-close" aria-label="Fermer la modale">&times;</a>
+            <h2 id="modal-mentions-title">Mentions Légales</h2>
+            <div class="modal-body">
+                <h3>Éditeur du site</h3>
+                <p><strong>Lumea SAS</strong><br>
+                Société par Actions Simplifiée au capital de 50 000 €<br>
+                Siège social : 123 Avenue du Mobilier, 75001 Paris, France<br>
+                RCS Paris : 123 456 789<br>
+                SIRET : 123 456 789 00012<br>
+                Numéro de TVA intracommunautaire : FR12 123456789</p>
+
+                <p><strong>Directeur de la publication :</strong> Jean Dupont<br>
+                <strong>Contact :</strong> <a href="mailto:contact@lumea.fr">contact@lumea.fr</a><br>
+                <strong>Téléphone :</strong> 01 23 45 67 89</p>
+
+                <h3>Hébergeur</h3>
+                <p><strong>OVH SAS</strong><br>
+                2 rue Kellermann<br>
+                59100 Roubaix, France<br>
+                Téléphone : 09 72 10 10 07</p>
+
+                <h3>Propriété intellectuelle</h3>
+                <p>L'ensemble du contenu de ce site (textes, images, vidéos, logos, graphismes) est la propriété exclusive de Lumea SAS, sauf mention contraire. Toute reproduction, même partielle, est strictement interdite sans autorisation préalable.</p>
+
+                <h3>Crédits</h3>
+                <p>Photos : Unsplash, Pexels (licences libres de droits)<br>
+                Icônes : Design personnalisé Lumea</p>
+
+                <h3>Cookies et données personnelles</h3>
+                <p>Pour en savoir plus sur l'utilisation de vos données personnelles, consultez notre <a href="#modal-confidentialite">Politique de confidentialité</a>.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-cgv" class="modal" role="dialog" aria-labelledby="modal-cgv-title" aria-modal="true">
+        <a href="#close-modal" class="modal-overlay" aria-label="Fermer la modale"></a>
+        <div class="modal-content">
+            <a href="#close-modal" class="modal-close" aria-label="Fermer la modale">&times;</a>
+            <h2 id="modal-cgv-title">Conditions Générales de Vente</h2>
+            <div class="modal-body">
+                <h3>Article 1 - Champ d'application</h3>
+                <p>Les présentes conditions générales de vente s'appliquent à toutes les commandes passées sur le site lumea.fr. En passant commande, le client reconnaît avoir pris connaissance des présentes conditions et les accepter sans réserve.</p>
+
+                <h3>Article 2 - Produits</h3>
+                <p>Les produits proposés sont ceux qui figurent sur le site lumea.fr. Chaque produit est accompagné d'une description détaillée. Les photographies sont aussi fidèles que possible mais ne peuvent assurer une similitude parfaite avec le produit réel, notamment en ce qui concerne les couleurs et les veinures naturelles du bois.</p>
+
+                <h3>Article 3 - Prix</h3>
+                <p>Les prix sont indiqués en euros TTC. Lumea se réserve le droit de modifier ses prix à tout moment, étant entendu que le prix figurant au catalogue le jour de la commande sera le seul applicable à l'acheteur.</p>
+
+                <h3>Article 4 - Commande</h3>
+                <p>Le client passe commande via le formulaire de contact ou par téléphone. Toute commande vaut acceptation des prix et descriptions des produits disponibles à la vente. Un email de confirmation sera envoyé sous 48h ouvrées.</p>
+
+                <h3>Article 5 - Livraison</h3>
+                <p>Les livraisons sont effectuées en France métropolitaine uniquement. Les délais de livraison sont de 4 à 8 semaines selon les produits. Un service d'installation à domicile est proposé en option.</p>
+
+                <h3>Article 6 - Droit de rétractation</h3>
+                <p>Conformément à l'article L221-18 du Code de la consommation, le client dispose d'un délai de 14 jours à compter de la réception du produit pour exercer son droit de rétractation sans avoir à justifier de motifs ni à payer de pénalités.</p>
+
+                <h3>Article 7 - Garantie</h3>
+                <p>Tous nos produits bénéficient de la garantie légale de conformité (articles L217-4 et suivants du Code de la consommation) et de la garantie contre les vices cachés (articles 1641 et suivants du Code civil). Une garantie constructeur de 5 ans s'applique sur tous nos meubles.</p>
+
+                <h3>Article 8 - Pièces détachées</h3>
+                <p>Lumea s'engage à maintenir disponible les pièces détachées pour tous ses produits pendant une durée minimale de 10 ans à compter de la date d'achat.</p>
+
+                <h3>Article 9 - Réclamations</h3>
+                <p>Pour toute question ou réclamation, vous pouvez contacter notre service client à l'adresse contact@lumea.fr ou par téléphone au 01 23 45 67 89.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-confidentialite" class="modal" role="dialog" aria-labelledby="modal-confidentialite-title" aria-modal="true">
+        <a href="#close-modal" class="modal-overlay" aria-label="Fermer la modale"></a>
+        <div class="modal-content">
+            <a href="#close-modal" class="modal-close" aria-label="Fermer la modale">&times;</a>
+            <h2 id="modal-confidentialite-title">Politique de Confidentialité</h2>
+            <div class="modal-body">
+                <h3>1. Collecte des données personnelles</h3>
+                <p>Lumea collecte les données personnelles suivantes :</p>
+                <ul>
+                    <li>Nom et prénom</li>
+                    <li>Adresse email</li>
+                    <li>Numéro de téléphone (optionnel)</li>
+                    <li>Adresse de livraison et de facturation</li>
+                    <li>Données de navigation (cookies techniques)</li>
+                </ul>
+
+                <h3>2. Finalité de la collecte</h3>
+                <p>Vos données personnelles sont collectées pour les finalités suivantes :</p>
+                <ul>
+                    <li>Traitement et suivi de vos commandes</li>
+                    <li>Communication concernant nos produits et services</li>
+                    <li>Amélioration de l'expérience utilisateur</li>
+                    <li>Respect de nos obligations légales</li>
+                </ul>
+
+                <h3>3. Base légale du traitement</h3>
+                <p>Le traitement de vos données repose sur :</p>
+                <ul>
+                    <li>L'exécution du contrat de vente</li>
+                    <li>Votre consentement (newsletter, cookies non-essentiels)</li>
+                    <li>Notre intérêt légitime (amélioration de nos services)</li>
+                    <li>Le respect d'obligations légales (facturation, comptabilité)</li>
+                </ul>
+
+                <h3>4. Durée de conservation</h3>
+                <p>Vos données sont conservées pendant :</p>
+                <ul>
+                    <li>Données clients : durée de la relation commerciale + 3 ans</li>
+                    <li>Données de facturation : 10 ans (obligation légale)</li>
+                    <li>Cookies : 13 mois maximum</li>
+                </ul>
+
+                <h3>5. Destinataires des données</h3>
+                <p>Vos données peuvent être transmises à :</p>
+                <ul>
+                    <li>Nos prestataires de livraison</li>
+                    <li>Nos sous-traitants techniques (hébergement, paiement)</li>
+                    <li>Les autorités légales sur demande justifiée</li>
+                </ul>
+
+                <h3>6. Vos droits</h3>
+                <p>Conformément au RGPD, vous disposez des droits suivants :</p>
+                <ul>
+                    <li><strong>Droit d'accès :</strong> obtenir une copie de vos données</li>
+                    <li><strong>Droit de rectification :</strong> corriger vos données inexactes</li>
+                    <li><strong>Droit à l'effacement :</strong> demander la suppression de vos données</li>
+                    <li><strong>Droit à la limitation :</strong> limiter le traitement de vos données</li>
+                    <li><strong>Droit à la portabilité :</strong> récupérer vos données dans un format structuré</li>
+                    <li><strong>Droit d'opposition :</strong> vous opposer au traitement de vos données</li>
+                    <li><strong>Droit de retirer votre consentement</strong> à tout moment</li>
+                </ul>
+
+                <p>Pour exercer vos droits, contactez-nous à : <a href="mailto:donnees@lumea.fr">donnees@lumea.fr</a></p>
+
+                <h3>7. Cookies</h3>
+                <p>Notre site utilise des cookies strictement nécessaires au fonctionnement du site (choix du thème). Aucun cookie publicitaire ou de traçage n'est utilisé. Vous pouvez désactiver les cookies dans les paramètres de votre navigateur.</p>
+
+                <h3>8. Sécurité</h3>
+                <p>Nous mettons en œuvre toutes les mesures techniques et organisationnelles appropriées pour protéger vos données contre tout accès non autorisé, modification, divulgation ou destruction.</p>
+
+                <h3>9. Contact DPO</h3>
+                <p>Pour toute question relative à la protection de vos données personnelles :<br>
+                Email : <a href="mailto:dpo@lumea.fr">dpo@lumea.fr</a><br>
+                Courrier : DPO Lumea, 123 Avenue du Mobilier, 75001 Paris</p>
+
+                <h3>10. Réclamation</h3>
+                <p>Vous avez le droit d'introduire une réclamation auprès de la CNIL (<a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer">www.cnil.fr</a>) si vous estimez que vos droits ne sont pas respectés.</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
