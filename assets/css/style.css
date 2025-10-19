@@ -1353,14 +1353,13 @@ html:has(.theme-checkbox:checked) footer .footer-col h4 {
 
 /* ===== Modal Close Target ===== */
 .modal-close-target {
-  position: fixed;
-  top: 50vh;
+  position: absolute;
+  top: 0;
   left: 0;
-  width: 1px;
-  height: 1px;
-  opacity: 0;
+  width: 0;
+  height: 0;
+  visibility: hidden;
   pointer-events: none;
-  overflow: hidden;
 }
 
 /* ===== Modal Styles ===== */
